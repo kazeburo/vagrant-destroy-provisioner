@@ -8,7 +8,13 @@ vagrant-destroy-provisioner allows a VM to be destroyed as a provisioning step.
 
 ## Usage
 
-    config.vm.provision :destroy
+    config.vm.provision "destroy", destroy: true
+
+## Option
+
+- destroy: true/false
+
+Destroy VM if true, otherwise only halt is executed. Default is true.
 
 ## Contributing
 
